@@ -13,20 +13,18 @@ def lights_off(light):
 def lights_on(light):
     light.on = True;
 
-
 def light_brightness(light, level):
     light.brightness = level 
 
 def light_temperature(light, color):
     light.temperature = color
 
-
 if __name__ == '__main__':
     demo = init_lights()
     lights_on(demo)
     light_temperature(demo, 0)
     light_brightness(demo, 0)
-    #demo.transition(5, brightness=1)
+
     time.sleep(2)
     light_brightness(demo, 0.5)
     light_temperature(demo, 1)
